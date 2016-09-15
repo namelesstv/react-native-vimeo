@@ -2,11 +2,8 @@
  * @providesModule Vimeo
  * @flow
  */
-import React from 'react-native';
-const {
-  StyleSheet,
-  PropTypes
-} = React;
+import React, { Component, PropTypes } from 'react';
+import { StyleSheet } from 'react-native';
 import WebViewBridge from 'react-native-webview-bridge';
 
 
@@ -15,7 +12,7 @@ function getVimeoPageURL(videoId) {
 }
 
 
-export default class Vimeo extends React.Component {
+export default class Vimeo extends Component {
 
   static propTypes = {
     videoId: PropTypes.string.isRequired,
